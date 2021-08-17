@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/electricity_bill.git/static/css/main.deb85fe0.chunk.css",
+    "main.js": "/electricity_bill.git/static/js/main.1cfb2e7e.chunk.js",
+    "main.js.map": "/electricity_bill.git/static/js/main.1cfb2e7e.chunk.js.map",
+    "runtime-main.js": "/electricity_bill.git/static/js/runtime-main.78905e75.js",
+    "runtime-main.js.map": "/electricity_bill.git/static/js/runtime-main.78905e75.js.map",
+    "static/js/2.8975c63c.chunk.js": "/electricity_bill.git/static/js/2.8975c63c.chunk.js",
+    "static/js/2.8975c63c.chunk.js.map": "/electricity_bill.git/static/js/2.8975c63c.chunk.js.map",
+    "index.html": "/electricity_bill.git/index.html",
+    "static/css/main.deb85fe0.chunk.css.map": "/electricity_bill.git/static/css/main.deb85fe0.chunk.css.map",
+    "static/js/2.8975c63c.chunk.js.LICENSE.txt": "/electricity_bill.git/static/js/2.8975c63c.chunk.js.LICENSE.txt",
+    "static/media/basic2.a9058aa2.jpg": "/electricity_bill.git/static/media/basic2.a9058aa2.jpg",
+    "static/media/logo.02121ae3.jpg": "/electricity_bill.git/static/media/logo.02121ae3.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.78905e75.js",
+    "static/js/2.8975c63c.chunk.js",
+    "static/css/main.deb85fe0.chunk.css",
+    "static/js/main.1cfb2e7e.chunk.js"
+  ]
+}
