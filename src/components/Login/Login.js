@@ -14,10 +14,8 @@ const Login = (props) => {
     if (enteredUsername === "abc@gmail.com" && enteredpwd === "abc123") {
       setError({
         title: "Valid input",
-        message: "Please enter a valid Username and Password.",
       });
-      setEnteredUsername("");
-      setEnteredpwd("");
+
       return;
     } else {
       setError({
@@ -38,6 +36,8 @@ const Login = (props) => {
 
   const errorHandler = () => {
     setError(null);
+    setEnteredUsername("");
+    setEnteredpwd("");
   };
 
   return (
