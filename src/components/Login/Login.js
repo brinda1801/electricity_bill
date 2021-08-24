@@ -15,7 +15,6 @@ const Login = (props) => {
       setError({
         title: "Valid input",
       });
-
       return;
     } else {
       setError({

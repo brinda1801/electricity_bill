@@ -1,0 +1,104 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+}
+
+.modal {
+  position: fixed;
+  top: 30vh;
+  left: 10%;
+  width: 80%;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.header {
+  background: #e7e7e7;
+  padding: 1rem;
+}
+
+.header h2 {
+  margin: 0;
+  color: black;
+}
+
+.content {
+  padding: 1rem;
+  color: white;
+}
+
+.actions {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    left: calc(50% - 20rem);
+    width: 40rem;
+  }
+}
+
+.table {
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  background-color: rgb(230, 230, 230);
+  max-width: 100%;
+  justify-content: inherit;
+  border-spacing: 0;
+  margin-top: 2rem;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.table td {
+  border-collapse: collapse;
+  padding: 6px 12px;
+  border-spacing: 5px;
+}
+
+.table td label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.table td input{
+  
+  background-color: rgb(219, 211, 211);
+  font: inherit;
+  display: block;
+  width: 100%;
+  border: 1px solid rgb(114, 114, 114);
+  padding: 0.15rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 10px;
+  padding-left: 0.5rem;
+}
+
+.table td select {
+  background-color: rgb(255, 255, 255);
+  font: inherit;
+  display: block;
+  width: 100%;
+  border: 1px solid rgb(114, 114, 114);
+  padding: 0.15rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 10px;
+  padding-left: 0.5rem;
+}
+
+.table td input:focus {
+  outline: none;
+  box-shadow:0 1px 3px 3px rgb(114, 142, 158);
+}
+

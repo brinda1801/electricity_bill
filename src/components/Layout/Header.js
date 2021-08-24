@@ -11,7 +11,7 @@ const Header = (props) => {
         <h1>Electrcity Bill Payment App</h1>
       </header>
       <div className={classes["main-image"]}>
-        <img src={basic1} alt="An image of Electrcity poles" />
+        <img className={props.image} src={basic1} alt="An image of Electrcity poles" />
       </div>
     </Fragment>
   );
