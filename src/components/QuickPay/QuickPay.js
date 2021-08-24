@@ -26,7 +26,7 @@ const QuickPay = (props) => {
   return (
     <div>
       <Header image={classes.img}></Header>
-      {error && <Details no={error.no} />}
+      {error && <Details no={error.no} name="QuickPay"/>}
       <Card className={classes.input}>
         <form onSubmit={ConsumerHandler}>
           <label htmlFor="number">Consumer No</label>

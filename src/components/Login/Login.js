@@ -3,19 +3,18 @@ import classes from "./Login.module.css";
 import Card from "../UI/Card.js";
 import Button from "../UI/Button.js";
 import ErrorModal from "../UI/ErrorModal";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 const Login = (props) => {
   const [enteredUsername, setEnteredUsername] = useState();
   const [enteredpwd, setEnteredpwd] = useState();
   const [error, setError] = useState();
+  const history = useHistory();
 
   const validation = (event) => {
     event.preventDefault();
     if (enteredUsername === "abc@gmail.com" && enteredpwd === "abc123") {
-      setError({
-        title: "Valid input",
-      });
-      return;
+      history.push('/Details');
     } else {
       setError({
         title: "Invalid input",
@@ -37,6 +36,10 @@ const Login = (props) => {
     setError(null);
     setEnteredUsername("");
     setEnteredpwd("");
+  };
+
+  const QuickPayHandler = () => {
+    history.push('/QuickPay');
   };
 
   return (
@@ -66,7 +69,7 @@ const Login = (props) => {
           />
           <br></br>
           <Button type="submit">Login</Button>
-          <Button type="login">Pay Without Registeration</Button>
+          <Button type="login" onClick={QuickPayHandler}>Pay Without Registeration</Button>
         </form>
       </Card>
     </div>

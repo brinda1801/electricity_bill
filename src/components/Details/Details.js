@@ -2,14 +2,20 @@ import React from "react";
 import Button from "../UI/Button";
 import Card from "../UI/Card";
 import classes from "./Details.module.css";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 const Details = (props) => {
+  const history = useHistory();
+
+  const Submithandller = () => {
+    history.push("/Payment");
+  };
   return (
     <div>
       <div className={classes.backdrop} onClick={props.onConfirm} />
       <Card className={classes.modal}>
         <header className={classes.header}>
-          <h2>QuickPay</h2>
+          <h2>{props.name}</h2>
         </header>
         <table className={classes.table}>
           <tbody>
@@ -39,7 +45,7 @@ const Details = (props) => {
                 <label>Month</label>
               </td>
               <td>
-                <select name="Month" >
+                <select name="Month">
                   <option>Jan</option>
                   <option>Feb</option>
                   <option>March</option>
@@ -69,7 +75,7 @@ const Details = (props) => {
           </tbody>
         </table>
         <footer className={classes.actions}>
-          <Button>Pay</Button>
+          <Button onClick={Submithandller}>Pay</Button>
         </footer>
       </Card>
     </div>

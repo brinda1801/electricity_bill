@@ -18,6 +18,10 @@
   width: auto;
 }
 
+.header button{
+  justify-content: space-around;
+  display: flex;
+}
   
 .main-image {
   width: 100%;
