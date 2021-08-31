@@ -1,0 +1,28 @@
+.label {
+    text-align: center;
+    max-width: 35rem;
+    width: 80%;
+    margin: 2rem auto;
+    margin-top: -10rem;
+    position: relative;
+    color: white;
+    border-radius: 14px;
+    padding: 1rem;
+    box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);
+  }
+  
+  .label p {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: white;
+    font-size: large;
+  }
+
+  .Link {
+      color:aqua;
+  }
+
+  .Link :hover{
+      color:white;
+  }

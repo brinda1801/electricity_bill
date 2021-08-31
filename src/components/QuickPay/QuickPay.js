@@ -4,29 +4,46 @@ import classes from "./QuickPay.module.css";
 import Card from "../UI/Card";
 import Button from "../UI/Button";
 import Details from "../Details/Details";
+import ErrorModal from "../UI/ErrorModal";
 
 const QuickPay = (props) => {
   const [consumer, setconsumer] = useState();
   const [error, seterror] = useState();
+  const [quick, setquick] = useState();
 
   const ConsumerHandler = (event) => {
     event.preventDefault();
     if (consumer === "123456789") {
-      seterror({
-        no: { consumer },
-      });
+      setquick(1);
       return;
-    } else alert("Its Invalid");
+    } else{
+      seterror({
+        title: "Invalid input",
+        message: "Please enter a valid Consumer No",
+      });
+    return;}
   };
 
   const ConsumerChangeHandler = (event) => {
     setconsumer(event.target.value);
   };
 
+  const errorHandler = () => {
+    seterror(null);
+    setconsumer('');
+  };
+
   return (
     <div>
       <Header image={classes.img}></Header>
-      {error && <Details no={error.no} name="QuickPay"/>}
+      {quick && <Details name="QuickPay" />}
+      {error && (
+        <ErrorModal
+          title={error.title}
+          message={error.message}
+          onConfirm={errorHandler}
+        />
+      )}
       <Card className={classes.input}>
         <form onSubmit={ConsumerHandler}>
           <label htmlFor="number">Consumer No</label>

@@ -8,9 +8,9 @@ const Payment = (props) => {
   return (
     <div>
       <Header />
-      <Card>
+      <Card className={classes.label}>
           <p>Payment Done!!</p>
-          <p>Another Payment?</p><Link to='/Welcome'>Click Here</Link>
+          <div ><span>Want to pay another Bill?</span><Link to='/Welcome' className={classes.Link}>Click Here</Link></div>
       </Card>
     </div>
   );
